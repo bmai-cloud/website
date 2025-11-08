@@ -1,0 +1,30 @@
+{
+  "name": "bmfuturomindai-website",
+  "version": "1.0.0",
+  "description": "BMFUTUROMIND AI - Learn AI & Coding with Industry Experts",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "AI",
+    "Coding",
+    "Python",
+    "GitHub Copilot",
+    "Full Stack Development",
+    "Education"
+  ],
+  "author": "BMFUTUROMIND AI",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  }
+}

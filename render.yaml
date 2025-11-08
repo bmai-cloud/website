@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: bmfuturomindai
+    env: static
+    buildCommand: npm install
+    startCommand: npm start
+    staticPublishPath: ./
+    domains:
+      - bmfuturomindai.com
+      - www.bmfuturomindai.com
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+    routes:
+      - path: /
+        handler: index.html
+      - path: /course-details
+        handler: course-details.html
+      - path: /api/register
+        handler: send-registration.php
+    headers:
+      - path: "/**"
+        values:
+          Cache-Control: public, max-age=3600
+          X-Content-Type-Options: nosniff
+          X-Frame-Options: SAMEORIGIN
+          X-XSS-Protection: "1; mode=block"
+          Strict-Transport-Security: max-age=31536000; includeSubDomains

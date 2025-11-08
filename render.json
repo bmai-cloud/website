@@ -1,0 +1,52 @@
+{
+  "name": "BMFUTUROMIND AI Website",
+  "description": "Professional website for AI and coding courses",
+  "buildCommand": "npm install && npm run build",
+  "startCommand": "npm start",
+  "envs": [
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "PORT",
+      "value": "3000"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "methods": ["GET"],
+      "handler": "index.html"
+    },
+    {
+      "path": "/course-details",
+      "methods": ["GET"],
+      "handler": "course-details.html"
+    }
+  ],
+  "headers": [
+    {
+      "path": "/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "domain": "bmfuturomindai.com"
+}
