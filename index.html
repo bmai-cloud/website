@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMFUTUROMIND AI - Learn AI & Coding</title>
+    <meta name="description" content="Master AI and coding with industry experts. Learn GitHub Copilot, Python, and Full Stack Development.">
+    <meta name="keywords" content="AI, Coding, Python, GitHub Copilot, Full Stack Development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="BMFUTUROMIND AI Logo" class="logo-image">
+                    <span>BMFUTUROMIND AI</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Learn AI & Coding with Industry Experts</h1>
+            <p>Master the future of technology with our comprehensive courses on AI, Python, and Full Stack Development</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-graduation-cap"></i> Browse Courses
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="courses-grid">
+                <!-- Course 1: GitHub Copilot Mastery -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fab fa-github"></i>
+                        <h3 class="course-title">GitHub Copilot Mastery</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Master AI-assisted coding with GitHub Copilot. Learn to leverage AI for faster, smarter, and more efficient development. Perfect for developers who want to enhance their productivity.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>1 Week</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-book"></i>
+                                <span>10 Hours</span>
+                            </div>
+                        </div>
+                        <div class="course-price">Rs 5,000</div>
+                        <button class="btn btn-course register-btn" data-course="GitHub Copilot Mastery" data-price="5000">
+                            <i class="fas fa-check-circle"></i> Register Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 2: Python Basics -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fab fa-python"></i>
+                        <h3 class="course-title">Python Basics</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Start your programming journey with Python. Learn fundamental concepts, syntax, and best practices. Ideal for beginners who want to build a strong foundation in programming.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>1 Week</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-book"></i>
+                                <span>10 Hours complete practical training only</span>
+                            </div>
+                        </div>
+                        <div class="course-price">Rs 1,000</div>
+                        <button class="btn btn-course register-btn" data-course="Python Basics" data-price="1000">
+                            <i class="fas fa-check-circle"></i> Register Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 3: Advanced Python & AI -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-robot"></i>
+                        <h3 class="course-title">Advanced Python & AI</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Dive deep into advanced Python programming and artificial intelligence. Learn machine learning, data science, and AI algorithms. Perfect for experienced developers seeking to master AI.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>10 Weeks</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-book"></i>
+                                <span>40 Hours</span>
+                            </div>
+                        </div>
+                        <div class="course-price">Rs 3,500</div>
+                        <button class="btn btn-course register-btn" data-course="Advanced Python & AI" data-price="3500">
+                            <i class="fas fa-check-circle"></i> Register Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 4: Full Stack Development -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-code"></i>
+                        <h3 class="course-title">Full Stack Development using copilot</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Become a complete web developer. Learn frontend, backend, databases, and deployment. Build real-world applications from scratch and launch your web development career.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>1 Week</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-book"></i>
+                                <span>10 Hours</span>
+                            </div>
+                        </div>
+                        <div class="course-price">Rs 4,500</div>
+                        <button class="btn btn-course register-btn" data-course="Full Stack Development" data-price="4500">
+                            <i class="fas fa-check-circle"></i> Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Why Choose Us?</h2>
+                    <p>BMFUTUROMIND AI is dedicated to providing world-class education in AI, coding, and technology. Our experienced instructors bring real-world expertise to every classroom.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-star"></i> Industry Expert Instructors</li>
+                        <li><i class="fas fa-certificate"></i> Recognized Certifications</li>
+                        <li><i class="fas fa-project-diagram"></i> Real-World Projects</li>
+                        <li><i class="fas fa-users"></i> Lifetime Community Access</li>
+                        <li><i class="fas fa-briefcase"></i> Career Support & Placement</li>
+                        <li><i class="fas fa-headset"></i> 24/7 Student Support</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@bmfuturomindai.com">info@bmfuturomindai.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919150851916">+91 91508 51916</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Across India - Online Classes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#home" style="color: var(--text-color); text-decoration: none;">Home</a></li>
+                        <li><a href="#courses" style="color: var(--text-color); text-decoration: none;">Courses</a></li>
+                        <li><a href="#about" style="color: var(--text-color); text-decoration: none;">About Us</a></li>
+                        <li><a href="#" style="color: var(--text-color); text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="#" style="color: var(--text-color); text-decoration: none;">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Register for <span id="modalCourseName"></span></h2>
+            <div class="modal-course-price">Price: <span id="modalCoursePrice"></span></div>
+            
+            <form id="registrationForm">
+                <input type="hidden" id="courseName">
+                <input type="hidden" id="coursePrice">
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="education">Education Level *</label>
+                    <select id="education" name="education" required>
+                        <option value="">Select your education level</option>
+                        <option value="High School">High School</option>
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Master">Master</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Working Professional">Working Professional</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-check"></i> Complete Registration
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><img src="logo.jpeg" alt="BMFUTUROMIND AI Logo" class="logo-image-footer"> BMFUTUROMIND AI</h3>
+                    <p>Empowering the next generation of developers and AI professionals through quality education and hands-on learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#">GitHub Copilot Mastery</a></li>
+                        <li><a href="#">Python Basics</a></li>
+                        <li><a href="#">Advanced Python & AI</a></li>
+                        <li><a href="#">Full Stack Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@bmfuturomindai.com">info@bmfuturomindai.com</a></p>
+                    <p>Phone: <a href="tel:+919150851916">+91 91508 51916</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BMFUTUROMIND AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
